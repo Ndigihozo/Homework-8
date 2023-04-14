@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RCb-b3-GKR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Page-->
+        <scene sceneID="aj4-cM-gBv">
+            <objects>
+                <viewController id="fcp-SI-9ed" customClass="ViewController" customModule="Homework__6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gNN-5Y-Gpm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlK-b7-eVJ">
+                                <rect key="frame" x="16" y="59" width="361" height="616"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndY-QX-JEb">
+                                <rect key="frame" x="16" y="706" width="70" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open ">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openSite:" destination="fcp-SI-9ed" eventType="touchUpInside" id="A0K-SD-Q5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-a9-fIi">
+                                <rect key="frame" x="240.66666666666663" y="706" width="136.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send Message">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sendMessage:" destination="fcp-SI-9ed" eventType="touchUpInside" id="SAZ-Cx-C3q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ftu-6Q-wvi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ftu-6Q-wvi" firstAttribute="bottom" secondItem="XlK-b7-eVJ" secondAttribute="bottom" constant="94" id="4XW-uL-r4N"/>
+                            <constraint firstItem="XlK-b7-eVJ" firstAttribute="trailing" secondItem="gNN-5Y-Gpm" secondAttribute="trailingMargin" id="5Rp-Hn-75Q"/>
+                            <constraint firstItem="Bkb-a9-fIi" firstAttribute="top" secondItem="XlK-b7-eVJ" secondAttribute="bottom" constant="31" id="Bmg-Bq-XrC"/>
+                            <constraint firstItem="Bkb-a9-fIi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ndY-QX-JEb" secondAttribute="trailing" constant="8" symbolic="YES" id="IUf-zJ-4FJ"/>
+                            <constraint firstItem="Bkb-a9-fIi" firstAttribute="trailing" secondItem="XlK-b7-eVJ" secondAttribute="trailing" id="POY-6c-at2"/>
+                            <constraint firstItem="ndY-QX-JEb" firstAttribute="leading" secondItem="Ftu-6Q-wvi" secondAttribute="leading" constant="16" id="br2-QK-rO4"/>
+                            <constraint firstItem="XlK-b7-eVJ" firstAttribute="top" secondItem="Ftu-6Q-wvi" secondAttribute="top" id="qBc-TL-FnI"/>
+                            <constraint firstItem="XlK-b7-eVJ" firstAttribute="leading" secondItem="gNN-5Y-Gpm" secondAttribute="leadingMargin" id="sgl-K7-UtD"/>
+                            <constraint firstItem="Bkb-a9-fIi" firstAttribute="baseline" secondItem="ndY-QX-JEb" secondAttribute="baseline" id="vIB-zD-vfg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web Page" image="magnifyingglass.circle" catalog="system" selectedImage="magnifyingglass.circle.fill" id="yQm-l0-pCx"/>
+                    <connections>
+                        <outlet property="webView" destination="XlK-b7-eVJ" id="5rY-LH-Df3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDJ-Ei-C7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681.679389312977" y="929.57746478873241"/>
+        </scene>
+        <!--Distance-->
+        <scene sceneID="aqf-2G-ty6">
+            <objects>
+                <viewController id="sYj-RR-Dh0" customClass="ViewController" customModule="Homework__6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHt-MG-Yti">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - - - - - " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="461-rh-SBN">
+                                <rect key="frame" x="16" y="332" width="361" height="119"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-ur-bhg">
+                                <rect key="frame" x="25" y="59" width="352" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cH0-Mm-6uR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="top" secondItem="cH0-Mm-6uR" secondAttribute="top" constant="273" id="8JC-l7-I65"/>
+                            <constraint firstItem="cH0-Mm-6uR" firstAttribute="bottom" secondItem="461-rh-SBN" secondAttribute="bottom" constant="318" id="Am6-8L-2H7"/>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="trailing" secondItem="uHt-MG-Yti" secondAttribute="trailingMargin" id="Wk1-bg-4vW"/>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="leading" secondItem="uHt-MG-Yti" secondAttribute="leadingMargin" id="mVi-RH-O14"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Distance" image="flag.2.crossed" catalog="system" selectedImage="flag.2.crossed.fill" id="KIT-fc-1Du"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="461-rh-SBN" id="Ic1-dk-Sp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDd-5V-Hqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681.679389312977" y="282.3943661971831"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SPa-qM-8gF">
+            <objects>
+                <viewController id="3Uj-wC-xzv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWP-74-wrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KigaliConventionCentre" translatesAutoresizingMaskIntoConstraints="NO" id="0rI-Mc-jDf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="krB-e1-cKy"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="0rI-Mc-jDf" firstAttribute="top" secondItem="krB-e1-cKy" secondAttribute="top" id="FqC-dh-8Ze"/>
+                            <constraint firstItem="krB-e1-cKy" firstAttribute="trailing" secondItem="0rI-Mc-jDf" secondAttribute="trailing" id="dsG-Yc-kqW"/>
+                            <constraint firstItem="0rI-Mc-jDf" firstAttribute="leading" secondItem="krB-e1-cKy" secondAttribute="leading" id="gSU-aB-QrZ"/>
+                            <constraint firstItem="krB-e1-cKy" firstAttribute="bottom" secondItem="0rI-Mc-jDf" secondAttribute="bottom" id="iQ1-mM-DVt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="9jT-SB-KkW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0e-Uv-kDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kkM-M1-DGC">
+            <objects>
+                <tabBarController id="RCb-b3-GKR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R3Y-1t-MAL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Uj-wC-xzv" kind="relationship" relationship="viewControllers" id="UjH-nH-P4k"/>
+                        <segue destination="sYj-RR-Dh0" kind="relationship" relationship="viewControllers" id="UtT-mc-UoK"/>
+                        <segue destination="fcp-SI-9ed" kind="relationship" relationship="viewControllers" id="2M4-op-hnk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ju9-ha-umX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KigaliConventionCentre" width="1920" height="1440"/>
+        <image name="flag.2.crossed" catalog="system" width="128" height="72"/>
+        <image name="flag.2.crossed.fill" catalog="system" width="128" height="72"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="image" width="287" height="176"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
